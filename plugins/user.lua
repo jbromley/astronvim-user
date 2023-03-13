@@ -9,4 +9,15 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "vimwiki/vimwiki",
+    lazy = false,
+    init = function() 
+      vim.g.vimwiki_list = {
+        {
+          path = '~/Documents/Wiki'
+        }
+      }
+    end
+  }
 }
